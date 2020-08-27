@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*cf */
+.cf:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.dn	{
+	display:none;
+}
+
+/* Wenフォント */
+/* IE */
+@font-face {
+font-family: MavenPro-Regula;
+src: url(../font/MavenPro-Regular.eot);
+}
+/* Firefox, Opera, Safari */
+@font-face {
+font-family: MavenPro-Regula;
+src: url(../font/MavenPro-Regular.ttf) format("truetype");
+}
+
+/* IE */
+@font-face {
+font-family: MavenPro-Medium;
+src: url(../font/MavenPro-Medium.eot);
+}
+/* Firefox, Opera, Safari */
+@font-face {
+font-family: MavenPro-Medium;
+src: url(../font/MavenPro-Medium.ttf) format("truetype");
+}
+
+/* IE */
+@font-face {
+font-family: MavenPro-Bold;
+src: url(../font/MavenPro-Bold.eot);
+}
+/* Firefox, Opera, Safari */
+@font-face {
+font-family: MavenPro-Bold;
+src: url(../font/MavenPro-Bold.ttf) format("truetype");
+}
+
+/* IE */
+@font-face {
+font-family: MavenPro-Black;
+src: url(../font/MavenPro-Black.eot);
+}
+/* Firefox, Opera, Safari */
+@font-face {
+font-family: MavenPro-Black;
+src: url(../font/MavenPro-Black.ttf) format("truetype");
+}
+
+
+
+/* body,html */
+	
+body,html{
+	font-family:"游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #666;
+	-webkit-text-size-adjust: 100%;
+	}
+
+
+/*header*/
+
+.inner {
+	width: 980px;
+	margin: 0 auto;
+}
+
+
+#hitokoto	{
+	background: rgba(195,13,35,0.7);
+}
+
+h1	{
+	color:  #FFF;
+	font-size: 10px;
+	padding: 5px 0;
+	letter-spacing: 0.1em;
+}
+
+#white_menu	{
+		height:80px;
+	position: relative;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	background: rgba(255,255,255,0.7);
+	         -webkit-box-shadow: 0 7px 7px -7px #CCC;
+       -moz-box-shadow: 0 7px 7px -7px #CCC;
+            box-shadow: 0 7px 7px -7px #CCC;
+}
+
+
+#logo {
+	float: left;
+	margin: 10px 0;
+}
+
+
+
+.menu {
+	font-family: 'MavenPro-Bold';
+	font-size: 12px;
+	letter-spacing: 0.1em;
+	margin-bottom:20px;
+}
+
+.menu span	{
+	margin: 0 30px;
+	float: left;
+	color: #C30D23;
+}
+
+.menu li  {
+	float: left;
+}
+
+.menu li a {
+	font-weight: bold;
+	color: 	#666;
+	text-decoration: none;
+	}
+
+
+nav	{
+	padding-top: 70px;
+	float:right;
+}
+
+
+
+
+	
+/*最背景（クモの巣）*/
+	
+.kumonosu{
+	width: 100%;
+	height: auto; 
+	background-image:url(../img/kumonosu_top.gif) , 
+					 url(../img/kumonosu.gif) ;
+    background-repeat: no-repeat,
+					   repeat-y;
+    background-position: top center,
+                         top center;
+	background-size:contain,
+					contain;
+	position: relative;
+	z-index: 0; 
+		}
+	
+		
+/*クモ（固定位置）*/
+
+#kumo{
+	z-index: 1;
+}
+
+#kumo img{
+	position: fixed; 
+	right:5%; 
+	margin-top:-100%; 
+	width: auto;
+	height: 90%;
+}
+
+/*article*/
+
+section	{
+	padding-top: 140px;
+	z-index: 2;
+	position:relative;
+}
+	
+
+/*top*/
+
+article .inner {
+	width: 980px;
+	margin: 0 auto;
+}
+
+#home	{
+	height: 1000px;
+	}
+
+h2 a {
+	padding-top: 40px;
+	color: #C30D23;
+	font-size: 20px;
+	line-height: 1.8em;
+	letter-spacing: 0.4em;
+	text-decoration:none;
+}
+
+
+
+
+/*PORTFORIO*/
+
+
+h3	{
+	font-family: 'MavenPro-Bold';
+	font-size: 24px;
+	color: #C30D23;
+	font-weight:bold;
+	padding-bottom: 30px;
+}
+
+
+h4	{
+	font-size:14px;
+	font-weight:bold;
+	line-height:20px;
+	margin-top: -140px; /* リンク位置上昇分 */
+    padding-top: 140px; /* 上昇分を戻す分 */
+}
+
+
+#PORTFORIO {
+	font-family: 'MavenPro-Bold';
+	font-size: 12px;
+}
+
+
+
+.PORTFORIO_list	{
+	margin-bottom:30px;
+}
+
+
+.PORTFORIO_list li{
+	float: left;
+	background: rgba(230,230,230,0.7);
+	margin: 15px 15px 15px 0;
+}
+
+.PORTFORIO_list li:nth-child(4) {
+	margin: 15px 0;
+}
+
+
+/*サムネイル*/
+
+.thum {
+	margin:10px;
+	width:200px;
+	height:auto;		
+	display:block;
+}
+
+.thum img {
+	padding-bottom:10px;
+}
+
+.thum figcaption {
+	width:200px;
+	height:auto;
+	font-weight:bold;
+	color: #666;
+	font-size:12px;
+	line-height:1.5em;
+	text-align:center;
+}
+
+.thum figcaption span {
+	color: #C30D23;
+	font-weight:bold;
+}
+
+.thum figcaption span {
+	color: #C30D23;
+	font-weight:bold;
+}
+
+
+/*ABOUT*/
+
+#prof_text	{
+	float:left;
+}
+
+
+#prof_text p {
+	font-size: 12px;
+	padding-bottom: 50px;
+	line-height: 2em;
+}
+
+
+#prof_text p span	{
+	color: #C30D23;
+}
+
+#prof_img	{
+	float:left;
+	margin-left: 70px;
+}
+
+
+#ABOUT .profile img {
+	width: 200px;
+	height: auto;
+	margin: 0 0 10px;
+}
+
+/*CONTACT*/
+#CONTACT  {
+	padding-bottom:120px;
+}
+
+#CONTACT p {
+	font-size:12px;
+	margin-bottom: 30px;
+}
+
+#CONTACT table {
+	width: 860px;
+	border-collapse: collapse;
+}
+
+#CONTACT th,
+#CONTACT td {
+	border-spacing: 0;
+	vertical-align:middle;
+	text-align: left;
+	font-size: 13px;
+	padding-bottom: 15px;
+}
+
+#CONTACT th {
+	width: 120px;
+	font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="email"]{
+	width: 300px;
+}
+
+textarea {
+	width: 500px;
+	height: 120px;
+	resize: none;
+}
+
+
+input[type="submit"] {
+	width: 300px;
+}
+
+/*footer*/
+
+footer	{
+	font-family: 'MavenPro-Bold';
+	background:#C30D23;
+	text-align: center;
+	color: #fff;
+	height: 50px;
+	font-size: 12px;
+	line-height: 50px;
+	z-index:4;
+	position:relative;
+}

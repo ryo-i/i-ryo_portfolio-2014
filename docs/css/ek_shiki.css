@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+#ek_shiki {
+	margin:50px auto;
+    width: 100%;
+    height: auto;
+	overflow:hidden;
+	position:absolute;
+}
+
+
+
+#ek_shiki img {
+    width: 120%;
+    height: auto;
+	position:relative;
+	left:-10%;
+}
